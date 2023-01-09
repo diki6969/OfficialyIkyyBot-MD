@@ -17,3 +17,9 @@ COPY . .
 EXPOSE 5000
 
 CMD ["npm", "run", "start"]
+
+CMD ["pm2", "start", "main.js"]
+
+CMD ["pm2", "save"]
+
+CMD ["pm2", "logs"]
