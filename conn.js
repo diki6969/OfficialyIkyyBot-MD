@@ -1075,7 +1075,7 @@ let usernya = `${("id", db_user).length}`
 let romnya = `${db_menfes.length}`
 const gurbot = '6282281657946@s.whatsapp.net'
 const mark_slebew = '6282281657946@s.whatsapp.net'
-var footer_nya =`𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝑩𝒚 ${mark_slebew.split("@")[6282281657946]}`
+var footer_nya =`𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝑩𝒚 ${mark_slebew.split("@")[0]}`
 var menu_nya =`${listmenu(sender,prefix,ad,namenya,premnya,usernya,romnya,tanggal,jam,no)}`
 let btn_menu = [
 {buttonId: `${prefix}groupbot`, buttonText: { displayText: '⋮☰ 𝗚𝗥𝗢𝗨𝗣' }, type: 1 },
