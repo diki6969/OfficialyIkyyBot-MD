@@ -3397,8 +3397,6 @@ conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apik
 }
 break
 case 'simi':{
-if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
 conn.sendMessage(from, { text: { url: `https://api.simsimi.net/v2/?text=${q}&lc=id`}}, { quoted: msg})
 }
