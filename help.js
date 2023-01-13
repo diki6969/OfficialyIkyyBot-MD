@@ -133,6 +133,10 @@ return`
  ${no++} ➳ ${prefix}tts
  ${no++} ➳ ${prefix}ttp
  ${no++} ➳ ${prefix}ttp2
+ ${no++} ➳ ${prefix}ttp3
+ ${no++} ➳ ${prefix}ttp4
+ ${no++} ➳ ${prefix}ttp5
+ ${no++} ➳ ${prefix}ttp6
  ${no++} ➳ ${prefix}attp
  ${no++} ➳ ${prefix}attp2
  ${no++} ➳ ${prefix}tourl
@@ -178,7 +182,6 @@ return`
  ${no++} ➳ ${prefix}debase32
  ${no++} ➳ ${prefix}debase64
  ${no++} ➳ ${prefix}aidraw
- ${no++} ➳ ${prefix}simi
 
  𝘽𝙐𝙂𝙑𝙄𝙋 𝙈𝙀𝙉𝙐 
  ${no++} ➳ ${prefix}sendbug 628xxx
@@ -333,6 +336,31 @@ return`
  ${no++} ➳ ${prefix}gawrgura
  ${no++} ➳ ${prefix}amongus
 
+ 𝙍𝘼𝙉𝘿𝙊𝙈 𝙈𝙀𝙉𝙐
+ ${no++} ➳ ${prefix}fanart
+ ${no++} ➳ ${prefix}blackpink
+ ${no++} ➳ ${prefix}awoo
+ ${no++} ➳ ${prefix}buka
+ ${no++} ➳ ${prefix}blush
+ ${no++} ➳ ${prefix}bully
+ ${no++} ➳ ${prefix}cecan
+ ${no++} ➳ ${prefix}cogan
+ ${no++} ➳ ${prefix}cringe
+ ${no++} ➳ ${prefix}cry
+ ${no++} ➳ ${prefix}cuddle
+ ${no++} ➳ ${prefix}elaina
+ ${no++} ➳ ${prefix}dance
+ ${no++} ➳ ${prefix}elf
+ ${no++} ➳ ${prefix}estetic
+ ${no++} ➳ ${prefix}exo
+ ${no++} ➳ ${prefix}feed
+ ${no++} ➳ ${prefix}feet
+ ${no++} ➳ ${prefix}husbu
+ ${no++} ➳ ${prefix}waifu
+ ${no++} ➳ ${prefix}poke
+ ${no++} ➳ ${prefix}mendo (meme indo)
+ ${no++} ➳ ${prefix}dajok  (dark jokes)
+ 
  𝘼𝙐𝘿𝙄𝙊 𝙈𝙀𝙉𝙐 
  ${no++} ➳ ${prefix}audio${ad++}
  ${no++} ➳ ${prefix}audio${ad++}

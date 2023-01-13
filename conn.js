@@ -1074,7 +1074,7 @@ let premnya = `${cekUser("premium", sender)? 'Aktif':'Tidak'}`
 let usernya = `${("id", db_user).length}`
 let romnya = `${db_menfes.length}`
 const gurbot = '6282281657946@s.whatsapp.net'
-const mark_slebew = '6282281657946@s.whatsapp.net'
+const mark_slebew = 'IKYYOFFICIAL'
 var footer_nya =`𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝑩𝒚 ${mark_slebew.split("@")[0]}`
 var menu_nya =`${listmenu(sender,prefix,ad,namenya,premnya,usernya,romnya,tanggal,jam,no)}`
 let btn_menu = [
@@ -1148,13 +1148,10 @@ var buc = `https://saipulanuar.ga/api/textmaker/${command}?text=${q}&apikey=jPHj
 conn.sendMessage(from, { image:{url:buc}, caption:'Done!'}, {quoted:msg})
 }
 break
-case 'attp2':
-case 'attp':
-case 'ttp2':
-case 'ttp':{
+case 'attp2':case 'attp':case 'ttp6':case 'ttp5':case 'ttp4':case 'ttp3':case 'ttp2':case 'ttp':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (!q) return reply(`Contoh:\n${prefix+command} saya wibu`)
-var nyz1 = await getBuffer(`https://saipulanuar.ga/api/maker/${command}?text=${q}&apikey=jPHjZpQF`)
+var nyz1 = await getBuffer(`https://api.lolhuman.xyz/api/${command}?apikey=${setting.api_lolkey}&text=${q}`)
 fs.writeFileSync('getpp.jpeg', nyz1)
 await ffmpeg("getpp.jpeg")
 .input("getpp.jpeg")
@@ -1185,10 +1182,10 @@ var tts = `https://saipulanuar.ga/api/text-to-audio/tts?text=${q}&idbahasa=id&ap
 conn.sendMessage(sender, {audio:{url:tts}, mimetype:'audio/mpeg', ptt:true}, {quoted:msg})
 }
 break
-case 'playmp3':
+case 'play':
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (!q) return reply('*Contoh:*\n#playmp3 preset angel baby 30 detik')
-fetchJson(`https://api-yogipw.herokuapp.com/api/yt/playmp3?query=${q}`)
+if (!q) return reply('*Contoh:*\n#play preset angel baby 30 detik')
+fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=${setting.api_lolkey}&query=${q}`)
 .then(z=>{
 var text_playmp3 =`*YOUTUBE PLAYMP3*
 
@@ -1212,7 +1209,7 @@ reply(mess.wait)
 fetchJson(`https://saipulanuar.ga/api/download/soundcloud?url=${yurl}&apikey=jPHjZpQF`).then(sdc =>{
 reply(`*SOUNDCLOUD DOWNLOAD*
 
-*author:* Lexxy Official
+*author:* IKYY Official
 *title:* ${sdc.result.title}
 *duration:* ${sdc.result.duration}
 *quality:* ${sdc.result.quality}
@@ -1229,7 +1226,7 @@ break
 case 'playmp4':
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (!q) return reply('*Contoh:*\n#playmp4 preset angel baby 30 detik')
-fetchJson(`https://api-yogipw.herokuapp.com/api/yt/playmp4?query=${q}`)
+fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=${setting.api_lolkey}&query=${q}`)
 .then(zz=>{
 var text_playmp4 =`*YOUTUBE PLAYMP4*
 
@@ -1288,7 +1285,7 @@ case 'ssweb-hp':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} https://google.com`)
 reply(mess.wait)
-let anu =`https://leyscoders-api.herokuapp.com/api/${command}?url=${q}&apikey=IkyOgiwara`
+let anu =`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.api_lolkey}&url=${q}`
 conn.sendMessage(from, { image: {url: anu}, caption: 'Done!'}, {quoted:msg})
 }
 break
@@ -2241,7 +2238,7 @@ conn.sendMessage(from, reactionMessage)
 }
 break
 case 'ttp':{
-if (!q) return reply(`Contoh :\n#${command} Lexxy`)
+if (!q) return reply(`Contoh :\n#${command} Ikyy`)
 conn.sendMessage(from, {sticker:{url:anu}, mimetype: 'image/webp'})
 }
 break
@@ -2452,7 +2449,7 @@ reply(mess.wait)
 var media = await conn.downloadAndSaveMediaMessage(msg, 'image', `./sticker/${sender.split('@')[0]}.jpg`)
 var media_url = (await UploadFileUgu(media)).url
 var meme_url = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${media_url}`
-var opt = { packname: 'Gurbot MD', author: 'By Lexxy' }
+var opt = { packname: 'Ikyybot MD', author: 'By Ikyy Official' }
 conn.sendImageAsSticker(from, meme_url, msg, opt)
 fs.unlinkSync(media)
 } else {
@@ -2612,6 +2609,27 @@ if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${setting.api_lolkey}`}, caption: `Nih ${command}📸` }, { quoted: msg })
+}
+break
+case 'mendo':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
+if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
+reply(mess.wait)
+conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/meme/memeindo?apikey=${setting.api_lolkey}`}, caption: `Nih ${command}📸` }, { quoted: msg })
+}
+break
+case 'dajok':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
+if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
+reply(mess.wait)
+conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/meme/darkjoke?apikey=${setting.api_lolkey}`}, caption: `Nih ${command}📸` }, { quoted: msg })
+}
+break
+case 'fanart':case 'blackpink':case 'awoo':case 'baka':case 'blush':case 'bully':case 'cecan':case 'cogan':case 'cringe':case 'cry':case 'cuddle':case 'elaina':case 'dance':case 'elf':case 'estetic':case 'exo':case 'feed':case 'feet':case 'husbu':case 'waifu':case 'poke':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
+if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
+reply(mess.wait)
+conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/${command}?apikey=${setting.api_lolkey}`}, caption: `Nih ${command}📸` }, { quoted: msg })
 }
 break
 case 'bj':case 'ero':case 'cum':case 'feet':case 'yuri':case 'trap':case 'lewd':case 'feed':case 'eron':case 'solo':case 'gasm':case 'poke':case 'anal':case 'holo':case 'tits':case 'kuni':case 'kiss':case 'erok':case 'smug':case 'baka':case 'solog':case 'feetg':case 'lewdk':case 'waifu':case 'pussy':case 'femdom':case 'cuddle':case 'hentai':case 'eroyuri':case 'cum_jpg':case 'blowjob':case 'erofeet':case 'holoero':case 'classic':case 'erokemo':case 'fox_girl':case 'futanari':case 'lewdkemo':case 'wallpaper':case 'pussy_jpg':case 'kemonomimi':case 'nsfw_avatar':{
@@ -3391,9 +3409,9 @@ conn.sendMessage(from, { image: { url: `https://zenzapis.xyz/api/morensfw/${comm
 break
 case 'aidraw':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
+if (cekUser("premium", sender) == true) return reply(mess.OnlyPrem)
 reply(mess.wait)
-conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apikey=${setting.api_lolkey}&text=${q}`}, caption: `Nih ${command}📸` }, { quoted: msg})
+conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apikey=${setting.api_lolkey}&text=${q}`}, caption: `Nih ${q}📸` }, { quoted: msg})
 }
 break
 case 'simi':{

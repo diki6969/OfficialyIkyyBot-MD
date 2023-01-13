@@ -133,6 +133,10 @@ return`
  ${no++} ➳ ${prefix}tts
  ${no++} ➳ ${prefix}ttp
  ${no++} ➳ ${prefix}ttp2
+ ${no++} ➳ ${prefix}ttp3
+ ${no++} ➳ ${prefix}ttp4
+ ${no++} ➳ ${prefix}ttp5
+ ${no++} ➳ ${prefix}ttp6
  ${no++} ➳ ${prefix}attp
  ${no++} ➳ ${prefix}attp2
  ${no++} ➳ ${prefix}tourl
@@ -177,8 +181,7 @@ return`
  ${no++} ➳ ${prefix}base64
  ${no++} ➳ ${prefix}debase32
  ${no++} ➳ ${prefix}debase64
- $(no++) ➳ ${prefix}aidraw
- $(no++) ➳ ${prefix}simi
+ ${no++} ➳ ${prefix}aidraw
 
  𝘽𝙐𝙂𝙑𝙄𝙋 𝙈𝙀𝙉𝙐 
  ${no++} ➳ ${prefix}sendbug 628xxx
