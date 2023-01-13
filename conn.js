@@ -1178,7 +1178,7 @@ break
 case 'tts':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (!q) return reply(`Contoh:\n${prefix+command} hallo bro`)
-var tts = `https://saipulanuar.ga/api/text-to-audio/tts?text=${q}&idbahasa=id&apikey=jPHjZpQF`
+var tts = `https://api.lolhuman.xyz/api/gtts/id?apikey=${setting.api_lolkey}&text=${q}`
 conn.sendMessage(sender, {audio:{url:tts}, mimetype:'audio/mpeg', ptt:true}, {quoted:msg})
 }
 break
@@ -1280,12 +1280,27 @@ reply(`𝗕𝗢𝗧 𝗜𝗡𝗙𝗢
 • Terdaftar : ( ${("id", db_user).length} )
 • Room Chat : ( ${db_menfes.length} )`)
 break
-case 'ssweb-pc':
-case 'ssweb-hp':{
+case 'ssweb':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} https://google.com`)
 reply(mess.wait)
 let anu =`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.api_lolkey}&url=${q}`
+conn.sendMessage(from, { image: {url: anu}, caption: 'Done!'}, {quoted:msg})
+}
+break
+case 'ssweb':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
+if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} https://google.com`)
+reply(mess.wait)
+let anu =`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.api_lolkey}&url=http://${q}`
+conn.sendMessage(from, { image: {url: anu}, caption: 'Done!'}, {quoted:msg})
+}
+break
+case 'ssweb':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
+if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} https://google.com`)
+reply(mess.wait)
+let anu =`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.api_lolkey}&url=https://${q}`
 conn.sendMessage(from, { image: {url: anu}, caption: 'Done!'}, {quoted:msg})
 }
 break
@@ -2613,14 +2628,12 @@ conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/nsfw
 break
 case 'mendo':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/meme/memeindo?apikey=${setting.api_lolkey}`}, caption: `Nih ${command}📸` }, { quoted: msg })
 }
 break
 case 'dajok':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/meme/darkjoke?apikey=${setting.api_lolkey}`}, caption: `Nih ${command}📸` }, { quoted: msg })
 }
@@ -3409,14 +3422,16 @@ conn.sendMessage(from, { image: { url: `https://zenzapis.xyz/api/morensfw/${comm
 break
 case 'aidraw':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (cekUser("premium", sender) == true) return reply(mess.OnlyPrem)
+if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apikey=${setting.api_lolkey}&text=${q}`}, caption: `Nih ${q}📸` }, { quoted: msg})
 }
 break
 case 'simi':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 reply(mess.wait)
-conn.sendMessage(from, { text: { url: `https://api.simsimi.net/v2/?text=${q}&lc=id`}}, { quoted: msg})
+var mi = `https://api.simsimi.net/v2/?text=${q}&lc=id`
+conn.sendMessage(sender, {text:{url:mi}, mimetype:'text', ptt:true}, {quoted:msg})
 }
 break
 case 'jadibot': {
