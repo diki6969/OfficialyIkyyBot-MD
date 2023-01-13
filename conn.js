@@ -3382,29 +3382,18 @@ let cerpe = await cerpen(`sejarah`)
 reply(`⭔ _*Title :*_ ${cerpe.title}\n⭔ _*Author :*_ ${cerpe.author}\n⭔ _*Category :*_ ${cerpe.kategori}\n⭔ _*Pass Moderation :*_ ${cerpe.lolos}\n⭔ _*Story :*_\n${cerpe.cerita}`)
 }
 break
-case 'hentai':
-case 'ahegao':
-case 'ass':
-case 'bdsm':
-case 'cuckold':
-case 'cum':
-case 'ero':
-case 'femdom':
-case 'foot':
-case 'gangbang':
-case 'glasses':
-case 'jahy':
-case 'masturbation':
-case 'orgy':
-case 'panties':
-case 'pussy':
-case 'thighs':
-case 'yuri':{
+case 'hentai':case 'ahegao':case 'ass':case 'bdsm':case 'cuckold':case 'cum':case 'ero':case 'femdom':case 'foot':case 'gangbang':case 'glasses':case 'jahy':case 'masturbation':case 'orgy':case 'panties':case 'pussy':case 'thighs':case 'yuri':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
-let cndn = await fetchJson(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/${command}.json`)
-let random = cndn[Math.floor(Math.random() * cndn.length)]
-conn.sendMessage(m.chat, { image: { url: random }, caption: `Nih Kak` }, { quoted: fakekirbotz })
+reply(mess.wait)
+conn.sendMessage(from, { image: { url: `https://zenzapis.xyz/api/morensfw/${command}?apikey=${setting.zenzkey}`}, caption: `Nih ${command}📸` }, { quoted: msg})
+}
+break
+case 'aidraw':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
+if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
+reply(mess.wait)
+conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apikey=${setting.api_lolkey}&text=${text}`}, caption: `Nih ${command}📸` }, { quoted: msg})
 }
 break
 case 'jadibot': {
@@ -3733,7 +3722,7 @@ fetchJson(`https://saipulanuar.ga/api/download/tiktok2?url=${q}&apikey=dyJhXvqe`
 .then(tt_res => {
 reply(`𝗧𝗜𝗞𝗧𝗢𝗞 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗
 
-𝘼𝙪𝙩𝙝𝙤𝙧: Lexxy Official
+𝘼𝙪𝙩𝙝𝙤𝙧: Ikyy Official
 𝙅𝙪𝙙𝙪𝙡: ${tt_res.result.judul}
 𝙎𝙤𝙪𝙧𝙘𝙚: ${q}
 
