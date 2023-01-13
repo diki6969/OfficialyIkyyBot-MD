@@ -1,12 +1,12 @@
 {
   "name": "Bot",
   "version": "0.0.0",
-  "description": "Create By Lexxy Official",
+  "description": "Create By Ikyy Official",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
   },
-  "author": "Lexxy Official",
+  "author": "Ikyy Official",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
