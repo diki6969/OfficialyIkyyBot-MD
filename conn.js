@@ -1998,7 +1998,7 @@ break
 case 'git': case 'gitclone':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
-if (!q) return reply('link githubnya mana?\n*Contoh:*\n#gitclone https://github.com/Lexxy24/MenfessV1')
+if (!q) return reply('link githubnya mana?\n*Contoh:*\n#gitclone https://github.com/diki6969/OfficiallyIkyyBot-MD')
 var linknya = q
 if (!regex1.test(linknya)) return reply('link salah!')
 let [, user, repo] = args[0].match(regex1) || []
@@ -3400,7 +3400,7 @@ case 'simi':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
-conn.sendMessage(from, { success: { url: `https://api.simsimi.net/v2/?text=${q}&lc=id`}}, { quoted: msg})
+conn.sendMessage(from, { text: { url: `https://api.simsimi.net/v2/?text=${q}&lc=id`}}, { quoted: msg})
 }
 break
 case 'jadibot': {
