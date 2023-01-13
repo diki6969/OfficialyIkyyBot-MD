@@ -3393,14 +3393,14 @@ case 'aidraw':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
-conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apikey=${setting.api_lolkey}&text=${data_deposit.data.trannss}`}, caption: `Nih ${command}📸` }, { quoted: msg})
+conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apikey=${setting.api_lolkey}&text=${q}`}, caption: `Nih ${command}📸` }, { quoted: msg})
 }
 break
 case 'simi':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
-conn.sendMessage(from, { success: { url: `https://api.simsimi.net/v2/?text=${data_deposit.data.trannss}&lc=id`}}, { quoted: msg})
+conn.sendMessage(from, { success: { url: `https://api.simsimi.net/v2/?text=${q}&lc=id`}}, { quoted: msg})
 }
 break
 case 'jadibot': {
