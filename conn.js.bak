@@ -3400,7 +3400,7 @@ case 'simi'{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
-conn.sendMessage(from, { success: { url: `https://api.simsimi.net/v2/?text=WOY%20KONTOL&lc=id`}}, { quoted: msg})
+conn.sendMessage(from, { success: { url: `https://api.simsimi.net/v2/?text=${data_deposit.data.trannss}&lc=id`}}, { quoted: msg})
 }
 break
 case 'jadibot': {

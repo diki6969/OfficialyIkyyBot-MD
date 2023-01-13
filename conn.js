@@ -3396,7 +3396,7 @@ reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/dall-e?apikey=${setting.api_lolkey}&text=${data_deposit.data.trannss}`}, caption: `Nih ${command}📸` }, { quoted: msg})
 }
 break
-case 'simi'{
+case 'simi':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
