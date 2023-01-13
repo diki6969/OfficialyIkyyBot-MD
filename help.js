@@ -172,8 +172,7 @@ return`
  𝙏𝙊𝙊𝙇𝙎 𝙈𝙀𝙉𝙐 
  ${no++} ➳ ${prefix}spamcall
  ${no++} ➳ ${prefix}translate
- ${no++} ➳ ${prefix}ssweb-pc
- ${no++} ➳ ${prefix}ssweb-hp
+ ${no++} ➳ ${prefix}ssweb
  ${no++} ➳ ${prefix}bitly_short
  ${no++} ➳ ${prefix}cuttly_short
  ${no++} ➳ ${prefix}tinyurl_short
@@ -279,6 +278,29 @@ return`
  ${no++} ➳ ${prefix}wallhp
  ${no++} ➳ ${prefix}tatasurya
  ${no++} ➳ ${prefix}programing
+ ${no++} ➳ ${prefix}art (fanart anime)
+ ${no++} ➳ ${prefix}blackpink
+ ${no++} ➳ ${prefix}awoo
+ ${no++} ➳ ${prefix}buka
+ ${no++} ➳ ${prefix}blush
+ ${no++} ➳ ${prefix}bully
+ ${no++} ➳ ${prefix}cecan
+ ${no++} ➳ ${prefix}cogan
+ ${no++} ➳ ${prefix}cringe
+ ${no++} ➳ ${prefix}cry
+ ${no++} ➳ ${prefix}cuddle
+ ${no++} ➳ ${prefix}elaina
+ ${no++} ➳ ${prefix}dance
+ ${no++} ➳ ${prefix}elf
+ ${no++} ➳ ${prefix}estetic
+ ${no++} ➳ ${prefix}exo
+ ${no++} ➳ ${prefix}feed
+ ${no++} ➳ ${prefix}feet
+ ${no++} ➳ ${prefix}husbu
+ ${no++} ➳ ${prefix}waifu
+ ${no++} ➳ ${prefix}poke
+ ${no++} ➳ ${prefix}mendo (meme indo)
+ ${no++} ➳ ${prefix}dajok  (dark jokes)
 
  𝙋𝙍𝙄𝙈𝘽𝙊𝙉 𝙈𝙀𝙉𝙐 
  ${no++} ➳ ${prefix}ramaljodoh
@@ -336,31 +358,6 @@ return`
  ${no++} ➳ ${prefix}gawrgura
  ${no++} ➳ ${prefix}amongus
 
- 𝙍𝘼𝙉𝘿𝙊𝙈 𝙈𝙀𝙉𝙐
- ${no++} ➳ ${prefix}fanart
- ${no++} ➳ ${prefix}blackpink
- ${no++} ➳ ${prefix}awoo
- ${no++} ➳ ${prefix}buka
- ${no++} ➳ ${prefix}blush
- ${no++} ➳ ${prefix}bully
- ${no++} ➳ ${prefix}cecan
- ${no++} ➳ ${prefix}cogan
- ${no++} ➳ ${prefix}cringe
- ${no++} ➳ ${prefix}cry
- ${no++} ➳ ${prefix}cuddle
- ${no++} ➳ ${prefix}elaina
- ${no++} ➳ ${prefix}dance
- ${no++} ➳ ${prefix}elf
- ${no++} ➳ ${prefix}estetic
- ${no++} ➳ ${prefix}exo
- ${no++} ➳ ${prefix}feed
- ${no++} ➳ ${prefix}feet
- ${no++} ➳ ${prefix}husbu
- ${no++} ➳ ${prefix}waifu
- ${no++} ➳ ${prefix}poke
- ${no++} ➳ ${prefix}mendo (meme indo)
- ${no++} ➳ ${prefix}dajok  (dark jokes)
- 
  𝘼𝙐𝘿𝙄𝙊 𝙈𝙀𝙉𝙐 
  ${no++} ➳ ${prefix}audio${ad++}
  ${no++} ➳ ${prefix}audio${ad++}

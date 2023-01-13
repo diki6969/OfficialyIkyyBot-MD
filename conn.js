@@ -1075,7 +1075,7 @@ let usernya = `${("id", db_user).length}`
 let romnya = `${db_menfes.length}`
 const gurbot = '6282281657946@s.whatsapp.net'
 const mark_slebew = 'IKYYOFFICIAL'
-var footer_nya =`𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝑩𝒚 ${mark_slebew.split("@")[0]}`
+var footer_nya =`𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝑩𝒚 ${setting.footer}`
 var menu_nya =`${listmenu(sender,prefix,ad,namenya,premnya,usernya,romnya,tanggal,jam,no)}`
 let btn_menu = [
 {buttonId: `${prefix}groupbot`, buttonText: { displayText: '⋮☰ 𝗚𝗥𝗢𝗨𝗣' }, type: 1 },
@@ -1282,25 +1282,9 @@ reply(`𝗕𝗢𝗧 𝗜𝗡𝗙𝗢
 break
 case 'ssweb':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} https://google.com`)
-reply(mess.wait)
-let anu =`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.api_lolkey}&url=${q}`
-conn.sendMessage(from, { image: {url: anu}, caption: 'Done!'}, {quoted:msg})
-}
-break
-case 'ssweb':{
-if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} https://google.com`)
+if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} google.com`)
 reply(mess.wait)
 let anu =`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.api_lolkey}&url=http://${q}`
-conn.sendMessage(from, { image: {url: anu}, caption: 'Done!'}, {quoted:msg})
-}
-break
-case 'ssweb':{
-if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
-if (!q) return reply(`Masukan parameter url\n*Contoh:*\n${prefix+command} https://google.com`)
-reply(mess.wait)
-let anu =`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.api_lolkey}&url=https://${q}`
 conn.sendMessage(from, { image: {url: anu}, caption: 'Done!'}, {quoted:msg})
 }
 break
@@ -2638,7 +2622,7 @@ reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/meme/darkjoke?apikey=${setting.api_lolkey}`}, caption: `Nih ${command}📸` }, { quoted: msg })
 }
 break
-case 'fanart':case 'blackpink':case 'awoo':case 'baka':case 'blush':case 'bully':case 'cecan':case 'cogan':case 'cringe':case 'cry':case 'cuddle':case 'elaina':case 'dance':case 'elf':case 'estetic':case 'exo':case 'feed':case 'feet':case 'husbu':case 'waifu':case 'poke':{
+case 'art':case 'blackpink':case 'awoo':case 'baka':case 'blush':case 'bully':case 'cecan':case 'cogan':case 'cringe':case 'cry':case 'cuddle':case 'elaina':case 'dance':case 'elf':case 'estetic':case 'exo':case 'feed':case 'feet':case 'husbu':case 'waifu':case 'poke':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
 reply(mess.wait)
