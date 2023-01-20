@@ -23,6 +23,7 @@
     "moment-timezone": "^0.5.34",
     "node-fetch": "2.6.1",
     "node-webpmux": "^3.1.1",
+    "openai": "^3.1.0",
     "scrape-primbon": "^1.1.0",
     "qrcode": "^1.5.0",
     "qrcode-terminal": "^0.12.0"

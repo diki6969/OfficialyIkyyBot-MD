@@ -180,7 +180,8 @@ return`
  ${no++} ➳ ${prefix}base64
  ${no++} ➳ ${prefix}debase32
  ${no++} ➳ ${prefix}debase64
- ${no++} ➳ ${prefix}aidraw
+ ${no++} ➳ ${prefix}aidraw <apa>
+ ${no++} ➳ ${prefix}ai <apa>
 
  𝘽𝙐𝙂𝙑𝙄𝙋 𝙈𝙀𝙉𝙐 
  ${no++} ➳ ${prefix}sendbug 628xxx

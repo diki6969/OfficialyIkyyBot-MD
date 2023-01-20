@@ -2,6 +2,7 @@
 
 "use strict";
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, proto, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
+const { Configuration, OpenAIApi } = require("openai");
 const { downloadContentFromMessage, generateWAMessage, generateWAMessageFromContent, MessageType, buttonsMessage } = require("@adiwajshing/baileys")
 const { exec, spawn } = require("child_process");
 const { color, bgcolor, pickRandom, randomNomor } = require('./function/Data_Server_Bot/Console_Data')
@@ -3415,7 +3416,25 @@ case 'simi':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 reply(mess.wait)
 var mi = `https://api.simsimi.net/v2/?text=${q}&lc=id`
-conn.sendMessage(sender, {text:{url:mi}, mimetype:'text', ptt:true}, {quoted:msg})
+m.reply(res.success)
+}
+case 'ai':{
+if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
+reply(mess.wait)
+const configuration = new Configuration({
+  apiKey: process.env.setting.aikey,
+});
+const openai = new OpenAIApi(configuration);
+const response = await openai.createCompletion({
+            model: "text-davinci-003",
+            prompt: text,
+            temperature: 0,
+            max_tokens: 3000,
+            top_p: 1,
+            frequency_penalty: 0.5,
+            presence_penalty: 0
+        });
+            m.reply(response.data.choices[0].text)
 }
 break
 case 'jadibot': {
