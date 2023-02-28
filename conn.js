@@ -3422,7 +3422,7 @@ case 'ai':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 reply(mess.wait)
 const configuration = new Configuration({
-  apiKey: process.env.setting.aikey,
+  apikey = setting.aikey
 });
 const openai = new OpenAIApi(configuration);
 const response = await openai.createCompletion({
